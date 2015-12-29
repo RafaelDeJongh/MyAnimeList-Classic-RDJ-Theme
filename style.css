@@ -238,7 +238,7 @@ table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold
     bottom: 28px;
     padding: 3px 0;
     width: 90%;
-    padding: 0 5%;
+    padding: 2% 5% 1%;
     overflow: hidden;
     text-align: center;
     font-size: 13px;
