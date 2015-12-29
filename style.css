@@ -190,7 +190,6 @@ td#mal_cs_pic { display: none }
 .hide {
     background-image: url(http://rafaeldejongh.tk/data/MAL/noimage.jpg);
     background-size: cover;
-    /* background-size: 100%; */
     display: inline-block!important;
 }
 .header_title {
@@ -555,9 +554,7 @@ a {
     -o-transition: all .2s ease;
     transition: all .2s ease;
 }
-a:visited {color: #fff}
-a:active {color: #fff}
-a:hover {color: #fff}
+a:visited, a:active, a:hover {color: #fff}
 /*Scrollbar*/
 ::-webkit-scrollbar {width:12px;height:12px;background-color:#121212}
 ::-webkit-scrollbar-corner {background-color:#0e0e0e}
