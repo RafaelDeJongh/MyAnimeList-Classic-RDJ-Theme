@@ -1,4 +1,4 @@
-/*Manga Page Overwrites*/
+/*Manga Overwrites*/
 .table_header:nth-of-type(5) {display: none}
 .td1:nth-of-type(6), .td2:nth-of-type(6) {
     left: 0;
