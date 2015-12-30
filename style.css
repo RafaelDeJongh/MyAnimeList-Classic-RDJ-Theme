@@ -79,11 +79,11 @@ td#mal_cs_pic { display: none }
 #mal_cs_listinfo div:first-of-type a { left: 0px }
 #mal_cs_listinfo div:last-of-type a { left: 40px }
 #mal_cs_links div:first-of-type a:first-of-type { left: 80px }
-#mal_cs_links div:last-of-type a:first-of-type { left: 120px }
-#mal_cs_links div:last-of-type a:last-of-type { left: 160px }
-#mal_cs_links div:first-of-type a:last-of-type, #mal_cs_otherlinks div:first-of-type a { left: 200px }
-#mal_cs_otherlinks div a[href*="/forum/"], #mal_cs_otherlinks div a[href*="/mangalist/"], #mal_cs_otherlinks div a[href*="/animelist/"], #mal_cs_otherlinks div a[href*="/login.php"] { left: 240px }
-#mal_cs_otherlinks div a[href*="/history/"], #mal_cs_otherlinks div a[href*="/register.php"] { left: 280px }
+#mal_cs_links div:last-of-type a:first-of-type, #mal_cs_otherlinks div a[href*="/register.php"] { left: 120px }
+#mal_cs_links div:last-of-type a:last-of-type, #mal_cs_otherlinks div a[href*="/login.php"] {left: 160px}
+#mal_cs_links div:first-of-type a:last-of-type, #mal_cs_otherlinks div:first-of-type a {left: 200px}
+#mal_cs_otherlinks div a[href*="/forum/"], #mal_cs_otherlinks div a[href*="/mangalist/"], #mal_cs_otherlinks div a[href*="/animelist/"] {left: 240px}
+#mal_cs_otherlinks div a[href*="/history/"] {left: 280px}
 #mal_cs_otherlinks div a[href*="/panel.php?go=export"], #mal_cs_otherlinks div a[href*="/shared"], #mal_cs_otherlinks div a[href*="/modules.php?go=faq"] { left: 320px }
 #mal_cs_listinfo div a:before, #mal_cs_links div a:before, #mal_cs_otherlinks div a:before {
     position: absolute;
@@ -130,6 +130,7 @@ td#mal_cs_pic { display: none }
     height: 15px;
     text-align: center;
     font-size: 0.9em;
+	white-space: nowrap;
 }
 #list_surround > table:first-of-type {
     text-align: center;
@@ -219,14 +220,14 @@ td#mal_cs_pic { display: none }
 }
 table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw):hover + .hide { opacity: .75 }
 /*Tables*/
-.animetitle, .td1, .td2, .td1 a[title="Anime Information"] + small, .td2 a[title="Anime Information"] + small {
+.animetitle, .td1, .td2, .td1 a[title="Anime Information"] + small, .td2 a[title="Anime Information"] + small, .td1 a:not([title="Anime Information"]) + small, .td2 a:not([title="Anime Information"]) + small {
     background-color: rgba(0,0,0,.5);
-    /*opacity: 0;
+    color: #fefefe;
+	/*opacity: 0;
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;*/
-    color: #fefefe;
 }
 /*#list_surround > table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw):hover, *:hover > .td1, .animetitle, .td1 a[title="Anime Information"] + small { opacity: 1 }
 #list_surround > table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw):hover, *:hover > .td2, .td2 a[title="Anime Information"] + small { opacity: 1 }*/
@@ -282,19 +283,21 @@ td[width="70"] + .td1:nth-of-type(5):before, [width="70"] + .td2:nth-of-type(5):
 td[width="70"] + .td1:nth-of-type(5), td[width="70"] + .td2:nth-of-type(5) {
     top: 0;
     right: 0;
-    width: auto;
+    width: 62.66666%;
     text-align: right;
+    padding-right: 4%;
 }
 .td1 a:not([title="Anime Information"]) + small, .td2 a:not([title="Anime Information"]) + small {
     display: block;
     visibility: visible;
     position: absolute;
-    top: 41px;
-    right: 11px;
-    width: auto;
-    padding: 4px 7px;
+    top: 28px;
+    right: 33.33333%;
+    width: 33.33333%;
+    padding: 5.5px 0;
     font-size: 11px;
-    text-align: right;
+    text-align: center;
+    word-wrap: break-word;
 }
 .td1:nth-of-type(3):before, .td2:nth-of-type(3):before { content: "Score: " }
 .td1:nth-of-type(3), .td2:nth-of-type(3) {
@@ -316,8 +319,9 @@ td[width="50"] + .td1:nth-of-type(5), td[width="50"] + .td2:nth-of-type(5) {
 .td1:nth-of-type(4)[width="70"], .td2:nth-of-type(4)[width="70"] {
     bottom: 0;
     right: 0;
-    width: auto;
+    width: 61.66666%;
     text-align: right;
+    padding-right: 5%;
 }
 .td1:nth-of-type(6), .td2:nth-of-type(6) {
     left: 33.33333%;
@@ -335,13 +339,6 @@ td[width="50"] + .td1:nth-of-type(5), td[width="50"] + .td2:nth-of-type(5) {
     top: 28px;
     width: 33.33333%;
     min-width: 70px;
-}
-.td1[width="125"], .td2[width="125"] {
-    left: 0;
-    top: 71px;
-    width: 184px;
-    height: 45px;
-    overflow: auto;
 }
 #list_surround > table:hover .td1[width="125"], #list_surround > table:hover .td2[width="125"] { display: block }
 #list_surround .List_LightBox {
@@ -434,7 +431,7 @@ input[value=Go] {display: none}
 @media screen and (min-width: 1812px) { 
     #list_surround > table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw), .hide {
         width: 12.5%;
-        height: 18vw;
+        height: 17.5vw;
     }
     .hide { margin-left: -12.5% }
 }
