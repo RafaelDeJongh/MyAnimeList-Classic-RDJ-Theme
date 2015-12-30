@@ -157,24 +157,24 @@ td#mal_cs_pic { display: none }
     color: #fff;
     background-color: #171717;
 }
-#mal_cs_listinfo div:first-of-type a:before { background-image: url(profile.png) }
-#mal_cs_listinfo div:last-of-type a:before { background-image: url(logout.png) }
-#mal_cs_links div:first-of-type a:first-of-type:before { background-image: url(add.png) }
-#mal_cs_links div:last-of-type a:first-of-type:before { background-image: url(anime.png) }
-#mal_cs_links div:last-of-type a:last-of-type:before { background-image: url(manga.png) }
-#mal_cs_links div:first-of-type a:last-of-type:before { background-image: url(home.png) }
-#mal_cs_otherlinks div:first-of-type a:before { background-image: url(user.png) }
-#mal_cs_otherlinks div a[href*="/forum/"]:before { background-image: url(forum.png) }
-#mal_cs_otherlinks div a[href*="/mangalist/"]:before { background-image: url(usermanga.png) }
-#mal_cs_otherlinks div a[href*="/animelist/"]:before { background-image: url(useranime.png) }
-#mal_cs_otherlinks div a[href*="/login.php"]:before { background-image: url(login.png) }
-#mal_cs_otherlinks div a[href*="/history/"]:before { background-image: url(history.png) }
-#mal_cs_otherlinks div a[href*="/register.php"]:before { background-image: url(register.png) }
-#mal_cs_otherlinks div a[href*="/panel.php?go=export"]:before { background-image: url(export.png) }
-#mal_cs_otherlinks div a[href*="/shared"]:before { background-image: url(shared.png) }
-#mal_cs_otherlinks div a[href*="/modules.php?go=faq"]:before { background-image: url(faq.png) }
+#mal_cs_listinfo div:first-of-type a:before { background-image: url(images/profile.png) }
+#mal_cs_listinfo div:last-of-type a:before { background-image: url(images/logout.png) }
+#mal_cs_links div:first-of-type a:first-of-type:before { background-image: url(images/add.png) }
+#mal_cs_links div:last-of-type a:first-of-type:before { background-image: url(images/anime.png) }
+#mal_cs_links div:last-of-type a:last-of-type:before { background-image: url(images/manga.png) }
+#mal_cs_links div:first-of-type a:last-of-type:before { background-image: url(images/home.png) }
+#mal_cs_otherlinks div:first-of-type a:before { background-image: url(images/user.png) }
+#mal_cs_otherlinks div a[href*="/forum/"]:before { background-image: url(images/forum.png) }
+#mal_cs_otherlinks div a[href*="/mangalist/"]:before { background-image: url(images/usermanga.png) }
+#mal_cs_otherlinks div a[href*="/animelist/"]:before { background-image: url(images/useranime.png) }
+#mal_cs_otherlinks div a[href*="/login.php"]:before { background-image: url(images/login.png) }
+#mal_cs_otherlinks div a[href*="/history/"]:before { background-image: url(images/history.png) }
+#mal_cs_otherlinks div a[href*="/register.php"]:before { background-image: url(images/register.png) }
+#mal_cs_otherlinks div a[href*="/panel.php?go=export"]:before { background-image: url(images/export.png) }
+#mal_cs_otherlinks div a[href*="/shared"]:before { background-image: url(images/shared.png) }
+#mal_cs_otherlinks div a[href*="/modules.php?go=faq"]:before { background-image: url(images/faq.png) }
 #inlineContent {
-    background-image: url(http://rafaeldejongh.tk/data/MAL/header.jpg);
+    background-image: url(images/header.jpg);
     background-repeat: repeat;
     background-color: #000;
     background-position: top center;
@@ -189,7 +189,7 @@ td#mal_cs_pic { display: none }
 }
 /*Titles*/
 .hide {
-    background-image: url(http://rafaeldejongh.tk/data/MAL/noimage.jpg);
+    background-image: url(images/noimage.jpg);
     background-size: cover;
     display: inline-block!important;
 }
@@ -392,14 +392,16 @@ input[value=Go] {display: none}
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    height: 104% !important;
-    min-height: 10% !important;
+	margin-top: -1%;
+    height: 109%!important;
+    min-height: 75px!important;
 }
 /*FancyBox Inner Table*/
 #fancybox-inner {
     bottom: 10px;
-    width: 98% !important;
-    height: auto !important;
+    width: 98%!important;
+    height: auto!important;
+	overflow: hidden!important;
 }
 #fancybox-frame {
     background-color: #fff;
@@ -423,9 +425,33 @@ input[value=Go] {display: none}
 }
 .spaceit, div#fancybox-inner div {
     color: #eee;
-    margin-top: -4px;
-    padding-bottom: 2px;
-    font-weight: 700;
+	font-weight: 700;
+    margin-top: -2px;
+    padding-bottom: 6px;
+}
+#fancybox-inner input[type="button"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    background: #990000;
+    border: none;
+    outline: none;
+    background-clip: padding-box;
+    border-radius: 3px;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    -webkit-transition: all .05s ease;
+    transition: all 0.1s ease-in-out;
+    padding: 6px 10px 10px;
+}
+#fancybox-inner input[type="button"]:hover {background: #b30000;}
+#fancybox-inner input[type="button"]:focus {
+    background: #b30000;
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.45);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    top: 1px;
 }
 /*Media Quaries*/
 @media screen and (min-width: 1812px) { 
