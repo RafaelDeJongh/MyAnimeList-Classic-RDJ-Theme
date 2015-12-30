@@ -333,12 +333,18 @@ td[width="50"] + .td1:nth-of-type(5), td[width="50"] + .td2:nth-of-type(5) {
     top: 28px;
     width: 33.33333%;
     min-width: 70px;
+	/*-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-left-radius: 3px;*/
 }
 .td1:nth-of-type(7), .td2:nth-of-type(7) {
     left: 0 !important;
     top: 28px;
     width: 33.33333%;
     min-width: 70px;
+	/*-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-bottom-right-radius: 3px;*/
 }
 #list_surround > table:hover .td1[width="125"], #list_surround > table:hover .td2[width="125"] { display: block }
 #list_surround .List_LightBox {
