@@ -1,0 +1,23 @@
+/*Manga Overwrites*/
+.table_header:nth-of-type(5) {display: none}
+.td1:nth-of-type(6), .td2:nth-of-type(6) {
+    left: 0;
+    top: 28px;
+    width: 33.33333%;
+	/*-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-bottom-right-radius: 3px;*/
+}
+.td1:nth-of-type(7), .td2:nth-of-type(7) {
+    right: 0!important;
+	left: auto!important;
+    top: 28px;
+    width: 33.33333%;
+    min-width: 70px;
+	/*-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-radius-bottomright: 0;
+	border-bottom-right-radius: 0;*/
+}
