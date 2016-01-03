@@ -60,20 +60,20 @@ body {
 td#mal_cs_pic { display: none }
 #mal_cs_listinfo div a, #mal_cs_links div a, #mal_cs_otherlinks div a {
 	display: inline-block;
-    float:left;
+	float:left;
 	position: relative;
-    top: 10px;
-    width: 36px;
-    height: 25px;
-    line-height: 25px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: transparent;
-    font-size: 0!important;
+	top: 10px;
+	width: 36px;
+	height: 25px;
+	line-height: 25px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: transparent;
+	font-size: 0!important;
 }
 /*List Icons*/
 #mal_cs_listinfo div:first-of-type a:before { background-image: url(images/profile.png) }
@@ -218,10 +218,10 @@ table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold
     background-color: rgba(0,0,0,.5);
     color: #fefefe;
 	/*opacity: 0;
-    -webkit-transition: all .2s ease;
-    -moz-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;*/
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;*/
 }
 /*#list_surround > table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw):hover, *:hover > .td1, .animetitle, .td1 a[title="Anime Information"] + small { opacity: 1 }
 #list_surround > table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw):hover, *:hover > .td2, .td2 a[title="Anime Information"] + small { opacity: 1 }*/
