@@ -1,6 +1,28 @@
+/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - www.myanimelist.net/profile/RafaelDeJongh
+
+Content Table:
+--------------
+- Reset
+- Body
+- HeaderBar
+	- ListIcons
+	- Search
+- ListSurround
+	- Titles
+	- HeaderImage
+	- Tables
+- FancyBox
+- MediaQueries
+- Links
+- Scrollbar
+- Selection
+*/
 @charset "utf-8";
+/*Reset
+------------------*/
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
-/*Style*/
+/*Body
+------------------*/
 html {
     height: 100%;
     -webkit-box-sizing: border-box;
@@ -18,24 +40,25 @@ body {
     background-color: #1a1a1a;
     height: 100%;
 }
-/*HeaderBar*/
+/*HeaderBar
+------------------*/
 #mal_control_strip {
-    width: 100% !important;
-    height: 46px;
-    margin: auto !important;
-    max-width: 100% !important;
-    background: #17171a !important;
-    border-bottom: 1px solid #990000;
-    position: fixed;
-    top: 0;
-    z-index: 99999;
+    width:100% !important;
+    height:46px;
+    margin:auto !important;
+    max-width:100% !important;
+    background:#17171a !important;
+    border-bottom:1px solid #990000;
+    position:fixed;
+    top:0;
+    z-index:99999;
 }
 #mal_control_strip tbody {
-    position: relative;
-    left: 0;
-    margin: auto;
-    display: block;
-	padding: 0 1.5%;
+    position:relative;
+    left:0;
+    margin:auto;
+    display:block;
+	padding:0 1.5%;
 }
 .header_cw + table, .header_completed + table, .header_onhold + table, .header_dropped + table, .header_ptw + table {
     position: fixed;
@@ -50,8 +73,8 @@ body {
     padding: 0!important;
 	float:left;
 }
-#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links, #mal_cs_otherlinks {padding: 0!important; width: auto!important;}
-#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right-style: none !important }
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links, #mal_cs_otherlinks {padding:0!important;width:auto!important;}
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links {border-right-style:none!important }
 #mal_cs_pic {
     position: absolute;
     top: 11px;
@@ -75,7 +98,8 @@ td#mal_cs_pic { display: none }
 	color: transparent;
 	font-size: 0!important;
 }
-/*List Icons*/
+/*ListIcons
+------------------*/
 #mal_cs_listinfo div:first-of-type a:before { background-image: url(images/profile.png) }
 #mal_cs_listinfo div:last-of-type a:before { background-image: url(images/logout.png) }
 #mal_cs_links div:first-of-type a:first-of-type:before { background-image: url(images/add.png) }
@@ -109,7 +133,9 @@ td#mal_cs_pic { display: none }
     -o-transition: opacity .2s ease;
     transition: opacity .2s ease;
 }
-#mal_cs_listinfo div a:hover:before, #mal_cs_links div a:hover:before, #mal_cs_otherlinks div a:hover:before { opacity: 1 }
+#mal_cs_listinfo div a:hover:before, #mal_cs_links div a:hover:before, #mal_cs_otherlinks div a:hover:before {opacity:1}
+/*Search
+------------------*/
 #mal_cs_powered {
     top: 10px !important;
     right: 2% !important;
@@ -129,8 +155,10 @@ td#mal_cs_pic { display: none }
     -moz-border-radius: 1px;
     border-radius: 1px;
 }
+/*ListSurround
+------------------*/
 #list_surround > table:nth-of-type(n+4) ~ .header_cw + table, #list_surround > table:nth-of-type(n+4) ~ .header_completed + table, #list_surround > table:nth-of-type(n+4) ~ .header_onhold + table, #list_surround > table:nth-of-type(n+4) ~ .header_dropped + table, #list_surround > table:nth-of-type(n+4) ~ .header_ptw + table { display: none }
-.table_header { width: auto }
+.table_header {width:auto}
 .table_header:first-of-type, .table_header:nth-of-type(n+7), #list_surround > table:first-of-type tbody tr td:last-of-type, #list_surround > table:first-of-type tbody tr td:nth-of-type(4) { display: none }
 .table_headerLink {
     display: block;
@@ -165,7 +193,8 @@ td#mal_cs_pic { display: none }
     color: #fff;
     background-color: #171717;
 }
-/*Titles*/
+/*Titles
+------------------*/
 .hide {
     background-image:url(images/noimage.jpg);
     background-size:cover;
@@ -182,7 +211,8 @@ td#mal_cs_pic { display: none }
     height: 100%;
     width: 100%;
 }
-/*Header Image*/
+/*HeaderImage
+------------------*/
 #list_surround:before {
 	content:"";
 	display: block;
@@ -210,7 +240,8 @@ td#mal_cs_pic { display: none }
     transition: opacity .2s ease;
 }
 table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw):hover + .hide { opacity: .75 }
-/*Tables*/
+/*Tables
+------------------*/
 .animetitle, .td1, .td2, .td1 a[title="Anime Information"] + small, .td2 a[title="Anime Information"] + small, .td1 a:not([title="Anime Information"]) + small, .td2 a:not([title="Anime Information"]) + small {
     background-color: rgba(0,0,0,.5);
     color: #fefefe;
@@ -324,18 +355,14 @@ td[width="50"] + .td1:nth-of-type(5), td[width="50"] + .td2:nth-of-type(5) {
     top: 28px;
     width: 33.33333%;
     min-width: 70px;
-	/*-webkit-border-bottom-left-radius: 3px;
-	-moz-border-radius-bottomleft: 3px;
-	border-bottom-left-radius: 3px;*/
+	min-height: 22px;
 }
 .td1:nth-of-type(7), .td2:nth-of-type(7) {
     left: 0 !important;
     top: 28px;
     width: 33.33333%;
     min-width: 70px;
-	/*-webkit-border-bottom-right-radius: 3px;
-	-moz-border-radius-bottomright: 3px;
-	border-bottom-right-radius: 3px;*/
+	min-height: 22px;
 }
 #list_surround > table:hover .td1[width="125"], #list_surround > table:hover .td2[width="125"] { display: block }
 #list_surround .List_LightBox {
@@ -384,7 +411,8 @@ input[value=Go] {display: none}
     border-top: 1px solid #990000;
 }
 #list_surround > br {display: none}
-/*FancyBox*/
+/*FancyBox
+------------------*/
 #fancybox-outer {
     background-color: #1a1a1a !important;
     box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
@@ -398,7 +426,6 @@ input[value=Go] {display: none}
     height: 109%!important;
     min-height: 75px!important;
 }
-/*FancyBox Inner Table*/
 #fancybox-inner {
     bottom: 10px;
     width: 98%!important;
@@ -455,7 +482,8 @@ input[value=Go] {display: none}
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
     top: 1px;
 }
-/*Media Quaries*/
+/*MediaQueries
+------------------*/
 @media screen and (min-width: 1812px) { 
     #list_surround > table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw), .hide {
         width: 12.5%;
@@ -567,7 +595,8 @@ input[value=Go] {display: none}
         display: table;
     }
 }
-/*Links*/
+/*Links
+------------------*/
 a {
     color: #eee;
     text-decoration: none;
@@ -577,12 +606,14 @@ a {
     transition: all .2s ease;
 }
 a:visited, a:active, a:hover {color: #fff}
-/*Scrollbar*/
+/*Scrollbar
+------------------*/
 ::-webkit-scrollbar {width:12px;height:12px;background-color:#121212}
 ::-webkit-scrollbar-corner {background-color:#0e0e0e}
 ::-webkit-scrollbar-track {background-color:#121212}
 ::-webkit-scrollbar-thumb {background:#990000}
 ::-webkit-scrollbar:horizontal {height: 12px}
-/*Selection*/
+/*Selection
+------------------*/
 ::selection {color: #fff;background-color: #990000}
 ::-moz-selection {color: #fff;background-color: #990000}
