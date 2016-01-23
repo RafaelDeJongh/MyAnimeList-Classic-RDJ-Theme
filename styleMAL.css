@@ -1,4 +1,4 @@
-/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - www.myanimelist.net/profile/RafaelDeJongh
+/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - www.myanimelist.net/profile/RafaelDeJongh - Do NOT use or MODIFY without PERMISSION!
 
 Content Table:
 --------------
@@ -11,6 +11,7 @@ Content Table:
 	- Titles
 	- HeaderImage
 	- Tables
+		- Triangles
 - FancyBox
 - MediaQueries
 - Links
@@ -27,7 +28,7 @@ html {
     height: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing:border-box;
     -moz-background-clip: padding-box !important;
     -webkit-background-clip: padding-box !important;
     background-clip: padding-box !important;
@@ -234,10 +235,10 @@ td#mal_cs_pic { display: none }
 .hide {
     background-position: center;
     opacity: 1;
-    -webkit-transition: opacity .2s ease;
-    -moz-transition: opacity .2s ease;
-    -o-transition: opacity .2s ease;
-    transition: opacity .2s ease;
+    -webkit-transition: opacity .1s ease-in-out;
+    -moz-transition: opacity .1s ease-in-out;
+    -o-transition: opacity .1s ease-in-out;
+    transition: opacity .1s ease-in-out;
 }
 table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw):hover + .hide { opacity: .75 }
 /*Tables
@@ -259,7 +260,6 @@ table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold
     position: absolute;
     left: 0;
     bottom: 28px;
-    padding: 3px 0;
     width: 90%;
     padding: 2% 5% 1%;
     overflow: hidden;
@@ -282,9 +282,10 @@ table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold
     top: 0;
     left: 0;
     width: 33.33333%;
+	height: 22px;
     z-index: 1;
 }
-.td1 a[title="Anime Information"] + small, .td2 a[title="Anime Information"] + small {
+/*.td1 a[title="Anime Information"] + small, .td2 a[title="Anime Information"] + small {
     display: block;
     visibility: visible;
     position: absolute;
@@ -295,11 +296,26 @@ table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold
     font-size: 11px;
     text-align: center;
     word-wrap: break-word;
+}*/
+.td1 a[title="Anime Information"] + small, .td2 a[title="Anime Information"] + small {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    top: 28px;
+	left: 33.33333%;
+	width: 33.33333%;
+    left: calc(33.33333% + 1.5rem);
+    width: calc(33.33333% - 3rem);
+    padding: 5.5px 0;
+    font-size: 11px;
+    text-align: center;
+    word-wrap: break-word;
 }
 .td1:nth-of-type(4)[width="50"], .td2:nth-of-type(4)[width="50"] {
     top: 0;
     right: 0;
     width: 33.33333%;
+	height: 22px;
 }
 td[width="70"] + .td1:nth-of-type(5):before, [width="70"] + .td2:nth-of-type(5):before { content: "Volumes: " }
 td[width="70"] + .td1:nth-of-type(5), td[width="70"] + .td2:nth-of-type(5) {
@@ -316,6 +332,7 @@ td[width="70"] + .td1:nth-of-type(5), td[width="70"] + .td2:nth-of-type(5) {
     top: 28px;
     right: 33.33333%;
     width: 33.33333%;
+	height: 22px;
     padding: 5.5px 0;
     font-size: 11px;
     text-align: center;
@@ -349,6 +366,8 @@ td[width="50"] + .td1:nth-of-type(5), td[width="50"] + .td2:nth-of-type(5) {
     left: 33.33333%;
     top: 0;
     width: 33.33333%;
+	height: 22px;
+	min-height: 22px;
 }
 .td1:nth-of-type(8), .td2:nth-of-type(8) {
     right: 0;
@@ -363,6 +382,55 @@ td[width="50"] + .td1:nth-of-type(5), td[width="50"] + .td2:nth-of-type(5) {
     width: 33.33333%;
     min-width: 70px;
 	min-height: 22px;
+}
+/*Triangles
+------------------*/
+.td1:nth-of-type(7):after, .td2:nth-of-type(7):after {
+    content:"";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+	height: 0;
+	border-top: 28px solid rgba(0,0,0,.5);
+	border-right: 1.5rem solid transparent;
+}
+
+.td1:nth-of-type(8):before, .td2:nth-of-type(8):before {
+    content:"";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-top: 28px solid rgba(0,0,0,.5);
+    border-left: 1.5rem solid transparent;
+}
+.td1 a[title="Anime Information"] + small:before, .td2 a[title="Anime Information"] + small:before {
+	content:"";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-bottom: 28px solid rgba(0,0,0,.5);
+    border-left: 1.5rem solid transparent;
+    z-index: -1;
+}
+.td1 a[title="Anime Information"] + small:after, .td2 a[title="Anime Information"] + small:after {
+    content:"";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+	height: 0;
+	border-bottom: 28px solid rgba(0,0,0,.5);
+	border-right: 1.5rem solid transparent;
+	z-index: -1;
 }
 #list_surround > table:hover .td1[width="125"], #list_surround > table:hover .td2[width="125"] { display: block }
 #list_surround .List_LightBox {
