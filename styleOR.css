@@ -1,4 +1,5 @@
-/*Manga Overwrites*/
+/*Manga Overwrites
+------------------*/
 .table_header:nth-of-type(5) {display: none}
 .td1:nth-of-type(6), .td2:nth-of-type(6) {
     left: 0;
@@ -14,4 +15,47 @@
     width: 33.33333%;
     min-width: 70px;
 	min-height: 22px;
+}
+.td1:nth-of-type(6):after, .td2:nth-of-type(6):after {
+    content:"";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+	height: 0;
+	border-top: 28px solid rgba(0,0,0,.5);
+	border-right: 1.5rem solid transparent;
+}
+.td1:nth-of-type(7):before, .td2:nth-of-type(7):before {
+    content:"";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-top: 28px solid rgba(0,0,0,.5);
+    border-left: 1.5rem solid transparent;
+}
+.td1:nth-of-type(7):after, .td2:nth-of-type(7):after {
+    content:"";
+    display: none
+}
+.td1 a:not([title="Anime Information"]) + small, .td2 a:not([title="Anime Information"]) + small {
+    top: 56px;
+    left: 0;
+    width: calc(33.33333% - 1.5rem);
+	font-size: 10px;
+}
+.td1 a:not([title="Anime Information"]) + small:after, .td2 a:not([title="Anime Information"]) + small:after {
+	content:"";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 28px solid rgba(0,0,0,.5);
+    border-right: 1.5rem solid transparent;
 }
