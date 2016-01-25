@@ -1,0 +1,9 @@
+/*No Datum Manga Overwrites
+---------------------------*/
+.td1 a:not([title="Anime Information"]) + small, .td2 a:not([title="Anime Information"]) + small {
+    top:28px;
+    width:100%;
+}
+.td1 a:not([title="Anime Information"]) + small:after, .td2 a:not([title="Anime Information"]) + small:after {
+    display:none;
+}
