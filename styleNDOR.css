@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-/*No Datum Overwrites
----------------------*/
-.td1 a[title="Anime Information"] + small, .td2 a[title="Anime Information"] + small {
-    width:100%;
-    left:0;
-}
-.td1 a[title="Anime Information"] + small:before, .td2 a[title="Anime Information"] + small:before, .td1 a[title="Anime Information"] + small:after, .td2 a[title="Anime Information"] + small:after {
-    display:none;
-}
-=======
 /*No Datum Overwrites
 ---------------------*/
 .td1 a[title="Anime Information"] + small, .td2 a[title="Anime Information"] + small {
@@ -18,4 +7,3 @@
 .td1 a[title="Anime Information"] + small:before, .td2 a[title="Anime Information"] + small:before, .td1 a[title="Anime Information"] + small:after, .td2 a[title="Anime Information"] + small:after {
     display:none;
 }
->>>>>>> origin/master
