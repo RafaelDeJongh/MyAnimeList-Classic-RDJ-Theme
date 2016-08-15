@@ -18,6 +18,8 @@ License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - htt
 @import url("http://rafaeldejongh.github.io/MyAnimeList/styleOR.css");
 License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - https://github.com/RafaelDeJongh/MyAnimeList*/}</pre>
 
+**Make sure to change the "ENTERMALUSERNAME" of the first import link to make the cover generator work properly!**
+
 ###To change the bannger image please add the following code under the license line:
 
 <pre>#list_surround:before{background-image:url(http://URLTOIMAGE.JPG)}</pre>
