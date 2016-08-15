@@ -20,6 +20,28 @@ License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - htt
 
 **Make sure to change the "ENTERMALUSERNAME" of the first import link to make the cover generator work properly!**
 
+###This list is developed with the following List Settings:
+
+**Anime**
+
+- Numbers
+- Score
+- Type
+- Episodes
+- Rating
+- Start/End Dates
+- Priority
+
+**Manga**
+
+- Numbers
+- Score
+- Chapters
+- Volumes
+- Start/End Dates
+
+**If you do not want to make use of the Start/End Dates, then you can use the Template overrides mentioned below.** 
+
 ###To change the bannger image please add the following code under the license line:
 
 <pre>#list_surround:before{background-image:url(http://URLTOIMAGE.JPG)}</pre>
