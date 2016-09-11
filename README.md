@@ -1,6 +1,6 @@
 ![Description](http://files.gamebanana.com/bitpit/description_e1c38.png)
 
-This is a full width flat designed List template to be used on the website: MyAnimeList.net
+This is a minimalistic flat designed List Style which focuses around showing the Anime's cover in a nice grid like structure, to be used on the website: MyAnimeList.net
 
 Live Example: [animelist/RafaelDeJongh](https://myanimelist.net/animelist/RafaelDeJongh)
 
