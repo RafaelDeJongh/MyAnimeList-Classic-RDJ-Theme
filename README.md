@@ -1,7 +1,30 @@
-# MyAnimeList
+![Description](http://files.gamebanana.com/bitpit/description_e1c38.png)
+
 This is a fullwidth flatdesigned List template to be used on the website: MyAnimeList.net
 
-Live Example: https://myanimelist.net/animelist/RafaelDeJongh
+Live Example: [animelist/RafaelDeJongh](https://myanimelist.net/animelist/RafaelDeJongh)
+
+![Preview](http://files.gamebanana.com/bitpit/preview_67ec1.png)
+
+![AnimeListPreview](http://www.rafaeldejongh.com/wp-content/uploads/2016/08/MyAnimeList.jpg)
+
+![Features](http://files.gamebanana.com/bitpit/features_38a9e.png)
+
+This list style offer various features:
+
+- Fully responsive layout, works on desktop and mobile seamlessly 
+- Flat, metro like design for an easy overview
+- Custom Header Image
+- Full cover generation with MAL-IMAGE
+- Overrides for specific list settings
+
+![Installation](http://files.gamebanana.com/bitpit/installation_b6439.png)
+
+As this is a list style was made before the list style update, you have to make sure your Template settings is set to "Classic".
+
+![Classic](http://files.gamebanana.com/bitpit/classic.png)
+
+After the template settings has been set, you can now add the following code to your Advanced CSS List Design. 
 
 ###The code used for the Anime List:
 
@@ -42,13 +65,13 @@ License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - htt
 
 **If you do not want to make use of the Start/End Dates, then you can use the Template overrides mentioned below.** 
 
-###To change the bannger image please add the following code under the license line:
+###To change the banner image please add the following code under the license line:
 
 <pre>#list_surround:before{background-image:url(http//URLTOIMAGE.JPG)}</pre>
 
 ###Using Template Overrides 
 
-There are currently two temeplate overrides:
+There are currently two template overrides:
 
 - No Datum Anime Overrides
 - No Datum Manga Overrides
