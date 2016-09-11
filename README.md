@@ -67,7 +67,7 @@ License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - htt
 
 ###To change the banner image please add the following code under the license line:
 
-<pre>#list_surround:before{background-image:url(http//URLTOIMAGE.JPG)}</pre>
+<pre>#list_surround:before{background-image:url(//URLTOIMAGE.JPG)}</pre>
 
 ###Using Template Overrides 
 
