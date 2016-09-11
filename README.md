@@ -1,6 +1,6 @@
 ![Description](http://files.gamebanana.com/bitpit/description_e1c38.png)
 
-This is a fullwidth flatdesigned List template to be used on the website: MyAnimeList.net
+This is a full width flat designed List template to be used on the website: MyAnimeList.net
 
 Live Example: [animelist/RafaelDeJongh](https://myanimelist.net/animelist/RafaelDeJongh)
 
