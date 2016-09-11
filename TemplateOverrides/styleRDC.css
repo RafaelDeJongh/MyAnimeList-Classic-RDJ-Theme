@@ -1,0 +1,5 @@
+@charset "utf-8";
+/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - www.myanimelist.net/profile/RafaelDeJongh - https://github.com/RafaelDeJongh/MyAnimeList
+Remove Dropped and All Anime
+---------------------------*/
+#list_surround > table:first-of-type tbody tr td:last-of-type, #list_surround > table:first-of-type tbody tr td:nth-of-type(4){display:none}
