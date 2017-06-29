@@ -26,14 +26,14 @@ As this is a list style was made before the list style update, you have to make 
 
 After the template settings has been set, you can now add the following code to your Advanced CSS List Design. 
 
-###The code used for the Anime List:
+### The code used for the Anime List:
 
 <pre>/*Designed by Rafael De Jongh*/
 @import url("//mal-image.appspot.com/anime/ENTERMALUSERNAME/?code=%23more%5BID%5D%7Bbackground-image%3aurl(%5BURL%5D)%7D");
 @import url("//rafaeldejongh.github.io/MyAnimeList/styleMAL.css");
 License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - https://github.com/RafaelDeJongh/MyAnimeList*/}</pre>
 
-###And the code for the Manga List:
+### And the code for the Manga List:
 
 <pre>/*Designed by Rafael De Jongh*/
 @import url("//mal-image.appspot.com/manga/ENTERMALUSERNAME/?code=%23more%5BID%5D%7Bbackground-image%3aurl(%5BURL%5D)%7D");
@@ -43,7 +43,7 @@ License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - htt
 
 **Make sure to change the "ENTERMALUSERNAME" of the first import link to make the cover generator work properly!**
 
-###This list is developed with the following List Settings:
+### This list is developed with the following List Settings:
 
 **Anime**
 
@@ -65,11 +65,11 @@ License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - htt
 
 **If you do not want to make use of the Start/End Dates, then you can use the Template overrides mentioned below.** 
 
-###To change the banner image please add the following code under the license line:
+### To change the banner image please add the following code under the license line:
 
 <pre>#list_surround:before{background-image:url(//URLTOIMAGE.JPG)}</pre>
 
-###Using Template Overrides 
+### Using Template Overrides 
 
 There are currently two template overrides:
 
