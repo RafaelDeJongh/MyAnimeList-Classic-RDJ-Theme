@@ -29,14 +29,17 @@ After the template settings has been set, you can now add the following code to 
 ### The code used for the Anime List:
 
 <pre>/*Designed by Rafael De Jongh*/
-@import url("//mal-image.appspot.com/anime/ENTERMALUSERNAME/?code=%23more%5BID%5D%7Bbackground-image%3aurl(%5BURL%5D)%7D");
+
+
+
+@import url("//malcat-gen.appspot.com/series?preset=more&user=ENTERUSERNAMEHERE&list=anime");
 @import url("//rafaeldejongh.github.io/MyAnimeList/styleMAL.css");
 License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - https://github.com/RafaelDeJongh/MyAnimeList*/}</pre>
 
 ### And the code for the Manga List:
 
 <pre>/*Designed by Rafael De Jongh*/
-@import url("//mal-image.appspot.com/manga/ENTERMALUSERNAME/?code=%23more%5BID%5D%7Bbackground-image%3aurl(%5BURL%5D)%7D");
+@import url("//malcat-gen.appspot.com/series?preset=more&user=ENTERUSERNAMEHERE&list=manga");
 @import url("//rafaeldejongh.github.io/MyAnimeList/styleMAL.css");
 @import url("//rafaeldejongh.github.io/MyAnimeList/styleOR.css");
 License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - https://github.com/RafaelDeJongh/MyAnimeList*/}</pre>
