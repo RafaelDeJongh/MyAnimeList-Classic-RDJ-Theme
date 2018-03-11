@@ -29,9 +29,6 @@ After the template settings has been set, you can now add the following code to 
 ### The code used for the Anime List:
 
 <pre>/*Designed by Rafael De Jongh*/
-
-
-
 @import url("//malcat-gen.appspot.com/series?preset=more&user=ENTERUSERNAMEHERE&list=anime");
 @import url("//rafaeldejongh.github.io/MyAnimeList/styleMAL.css");
 License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - https://github.com/RafaelDeJongh/MyAnimeList*/}</pre>
