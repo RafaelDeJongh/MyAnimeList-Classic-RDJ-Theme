@@ -30,15 +30,15 @@ After the template settings has been set, you can now add the following code to 
 
 <pre>/*Designed by Rafael De Jongh*/
 @import url("//malcat-gen.appspot.com/series?preset=more&user=ENTERUSERNAMEHERE&list=anime");
-@import url("//rafaeldejongh.github.io/MyAnimeList/styleMAL.css");
+@import url("//rafaeldejongh.github.io/MyAnimeList-Classic-RDJ-Theme/styleMAL.css");
 License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - https://github.com/RafaelDeJongh/MyAnimeList*/}</pre>
 
 ### And the code for the Manga List:
 
 <pre>/*Designed by Rafael De Jongh*/
 @import url("//malcat-gen.appspot.com/series?preset=more&user=ENTERUSERNAMEHERE&list=manga");
-@import url("//rafaeldejongh.github.io/MyAnimeList/styleMAL.css");
-@import url("//rafaeldejongh.github.io/MyAnimeList/styleOR.css");
+@import url("//rafaeldejongh.github.io/MyAnimeList-Classic-RDJ-Theme/styleMAL.css");
+@import url("//rafaeldejongh.github.io/MyAnimeList-Classic-RDJ-Theme/styleOR.css");
 License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - https://github.com/RafaelDeJongh/MyAnimeList*/}</pre>
 
 **Make sure to change the "ENTERMALUSERNAME" of the first import link to make the cover generator work properly!**
@@ -80,4 +80,4 @@ Both fix/disable the usage of the date attribute for your list.
 
 You can add these overrides to your list style by importing these overrides styles after the main style has been loaded by adding another import url:
 
-<pre>@import url("//rafaeldejongh.github.io/MyAnimeList/TemplateOverrides/styleNDOR.css");</pre> 
+<pre>@import url("//rafaeldejongh.github.io/MyAnimeList-Classic-RDJ-Theme/TemplateOverrides/styleNDOR.css");</pre> 
