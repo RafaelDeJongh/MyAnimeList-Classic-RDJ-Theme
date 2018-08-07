@@ -39,7 +39,7 @@ License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - htt
 @import url("//malcat-gen.appspot.com/series?preset=more&user=ENTERUSERNAMEHERE&list=manga");
 @import url("//rafaeldejongh.github.io/MyAnimeList-Classic-RDJ-Theme/styleMAL.css");
 @import url("//rafaeldejongh.github.io/MyAnimeList-Classic-RDJ-Theme/styleOR.css");
-License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - https://github.com/RafaelDeJongh/MyAnimeList*/}</pre>
+License{/*Profile Liststyle created for MyAnimeList.com by Rafael De Jongh - https://github.com/RafaelDeJongh/MyAnimeList-Classic-RDJ-Theme*/}</pre>
 
 **Make sure to change the "ENTERMALUSERNAME" of the first import link to make the cover generator work properly!**
 
