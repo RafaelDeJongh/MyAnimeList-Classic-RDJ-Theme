@@ -2,7 +2,7 @@
 
 This is a minimalistic flat designed List Style which focuses around showing the Anime's cover in a nice grid like structure, to be used on the website: MyAnimeList.net
 
-Live Example: [animelist/RafaelDeJongh](https://myanimelist.net/animelist/RafaelDeJongh)
+You can find a newer updated version for the modern version of the MAL Style Design here: https://github.com/RafaelDeJongh/MyAnimeList-Modern-RDJ-Theme
 
 ![Preview](http://files.gamebanana.com/bitpit/preview_67ec1.png)
 
